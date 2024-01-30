@@ -1,0 +1,18 @@
+núm1= str(input("Ingresá el primer número: "))
+núm1 = float(núm1.replace(",","."))
+operador= input("Ingresá el operador: ")
+núm2= str(input("Ingresá el segundo número: "))
+núm2 = float(núm2.replace(",","."))
+resultado= str("RESULTADO ")
+if operador== "+":
+    resultado=(núm1 + núm2)
+elif operador== "-":
+    resultado= (núm1 - núm2)
+elif operador== "*":
+    resultado= (núm1 * núm2)
+elif operador== "/" or operador== "%":
+    resultado= (núm1 / núm2)
+else:
+    print("ERROR")
+resultado = (str(resultado).replace(".", ","))
+print("RESULTADO: " + str(resultado))
